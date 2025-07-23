@@ -5,6 +5,10 @@ Origin Repo: [https://github.com/dee1024/pytorch-captcha-recognition](https://gi
 
 本项目致力于使用神经网络来识别各种验证码。
 
+**注意**
+
+本项目基于原项目修复了一些参数修改无效BUG，适应更高版本PyTorch，去除Variable对象的使用，支持GPU训练
+
 特性
 ===
 - __端到端，不需要做更多的图片预处理（比如图片字符切割、图片尺寸归一化、图片字符标记、字符图片特征提取）__
