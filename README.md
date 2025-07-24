@@ -7,7 +7,7 @@ Origin Repo: [https://github.com/dee1024/pytorch-captcha-recognition](https://gi
 
 **注意**
 
-本项目基于原项目修复了Batch_Size参数修改无效的BUG，适应更高版本PyTorch，去除Variable对象的使用(适应高版本PyTorch)，并且支持GPU训练，新添requirement.txt为测试代码所用到的Python及软件包版本
+本项目基于原项目修复了Batch_Size参数修改无效的BUG，在预测时同时打印真实值方便比对，适应更高版本PyTorch，去除Variable对象的使用(适应高版本PyTorch)，并且支持GPU训练，新添requirement.txt为测试代码所用到的Python及软件包版本
 
 特性
 ===
