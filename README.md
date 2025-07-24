@@ -69,8 +69,3 @@ Origin Repo: [https://github.com/dee1024/pytorch-captcha-recognition](https://gi
     python predict.py
     ```
     可以在控制台，看到预测输出的结果
-    
-作者
-===
-* __Dee Qiu__ <coolcooldee@gmail.com>
-* __Germey__ <cqc@cuiqingcai.com>
