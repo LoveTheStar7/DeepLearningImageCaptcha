@@ -12,7 +12,7 @@ def main():
     cnn = CNN().to(device)
     cnn.eval()
     cnn.load_state_dict(torch.load('best_model.pkl', weights_only=True))
-    print("load cnn net.")
+    print("Load CNN Net.")
     
     predict_dataloader = dataset.get_predict_data_loader()
 

@@ -32,4 +32,4 @@ if __name__ == '__main__':
         text, image = generate_captcha_text_and_image()
         filename = text + '_' + now + '.png'
         image.save(path + os.path.sep + filename)
-        print('saved %d : %s' % (i + 1, filename))
+        print('Saved %d : %s' % (i + 1, filename))

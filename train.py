@@ -30,19 +30,19 @@ def main():
             loss.backward()
             optimizer.step()
             if (i + 1) % 10 == 0:
-                print("epoch:", epoch + 1, "step:", i, "loss:", loss.item())
+                print("Epoch:", epoch + 1, "Step:", i, "Loss:", loss.item())
             if (i + 1) % 100 == 0:
                 # current is model.pkl
                 torch.save(cnn.state_dict(), "./model.pkl")
-                print("save model")
-        print("epoch:", epoch, "step:", i, "loss:", loss.item())
+                print("Save model")
+        print("Epoch:", epoch, "Step:", i, "Loss:", loss.item())
         eval_acc = evaluate()
         if eval_acc > max_eval_acc:
             # best model save as best_model.pkl
             torch.save(cnn.state_dict(), "./best_model.pkl")
-            print("save best model")
+            print("Save best model")
     torch.save(cnn.state_dict(), "./model.pkl")
-    print("save last model")
+    print("Save last model")
 
 
 if __name__ == '__main__':

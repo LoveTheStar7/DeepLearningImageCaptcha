@@ -12,7 +12,7 @@ def main():
     cnn = CNN().to(device)
     cnn.eval()
     cnn.load_state_dict(torch.load('model.pkl', weights_only=True))
-    print("load cnn net.")
+    print("Load CNN Net.")
 
     eval_dataloader = dataset.get_eval_data_loader()
 
@@ -32,8 +32,8 @@ def main():
         if predict_label == true_label:
             correct += 1
         if total % 200 == 0:
-            print('Test Accuracy of the model on the %d eval images: %f %%' % (total, 100 * correct / total))
-    print('Test Accuracy of the model on the %d eval images: %f %%' % (total, 100 * correct / total))
+            print('Test Accuracy of the model on the %d Eval Images: %f %%' % (total, 100 * correct / total))
+    print('Test Accuracy of the model on the %d Eval Images: %f %%' % (total, 100 * correct / total))
     return correct / total
 
 
